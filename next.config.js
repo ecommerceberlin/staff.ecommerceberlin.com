@@ -52,8 +52,8 @@ module.exports = withSentryConfig(withTM({
     },
 
     i18n: {
-      locales: ['pl'],
-      defaultLocale: 'pl',  
+      locales: ['en'],
+      defaultLocale: 'en',  
     },
 
   
