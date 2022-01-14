@@ -41,20 +41,21 @@ const settings = {
     ui : {
         menuItems : [
             {
+                name: 'general',
+                items: [
+                    {name: 'home', to: "/"}
+                ]
+            },
+            {
               name: 'report',
               items: [
-                {name: 'brandname.list', to: '/?details=0'},
-                {name: 'booth.list', to: '/?sort=profile.booth&details=0'},  
-                {name: 'brandname.full', to: '/?details=1'},
-                {name: 'booth.full', to: '/?sort=profile.booth&details=1'},
+                {name: 'brandname.list', to: '/'},
                 {name: 'map', to: '/map'},
                 {name: 'stats', to: '/stats'},
               ]
-            },
+            }
         ]
     },
-
-   
 
     common : {
 
