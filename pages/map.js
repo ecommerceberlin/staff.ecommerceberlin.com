@@ -4,19 +4,18 @@ import {
   connect,
   reduxWrapper,
   configure,
-  Wrapper,
-
+  Wrapper
 } from 'eventjuicer-site-components';
 
 import {
-  ExhibitorsMap
+  WidgetExhibitorsMap
 } from 'eventjuicer-admin-site-components'
 
 const settings = require('../settings').default;
 
 
 
-const PageMap = () => (<Wrapper first><ExhibitorsMap /></Wrapper>)
+const PageMap = () => (<Wrapper first><WidgetExhibitorsMap /></Wrapper>)
 
 
 
