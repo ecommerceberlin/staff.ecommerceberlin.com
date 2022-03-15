@@ -1,28 +1,32 @@
+import React from 'react'
+
 import {
-    connect,
-    reduxWrapper,
-    configure,
-    Wrapper,
-    WidgetPresenters,
-    WidgetSchedule
-  } from 'eventjuicer-site-components';
-  
- 
-  const settings = require('../settings').default;
-  
-  const PageList = () => {
-  
-    return (
-    <Wrapper first>
-    <WidgetPresenters limit={100} />
-    </Wrapper>)
-  } 
-  
-  export const getStaticProps = reduxWrapper.getStaticProps(async (props) => {
-    return await configure(props, {
-      settings : settings,
-      preload : ["report", "bookingmap"]
-    })
+  connect,
+  reduxWrapper,
+  configure,
+  Wrapper,
+
+} from 'eventjuicer-site-components';
+
+import {
+  WidgetPresentersList
+} from 'eventjuicer-admin-site-components'
+
+
+
+const settings = require('../settings').default;
+
+
+
+const PageMap = () => (<Wrapper first><WidgetPresentersList /></Wrapper>)
+
+
+
+export const getStaticProps = reduxWrapper.getStaticProps(async (props) => {
+  return await configure(props, {
+    settings : settings,
+    preload : ["presenters"]
   })
-  
-  export default connect()(PageList);
+})
+
+export default connect()(PageMap);
