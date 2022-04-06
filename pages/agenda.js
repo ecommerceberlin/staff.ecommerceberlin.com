@@ -9,7 +9,7 @@ import {
 } from 'eventjuicer-site-components';
 
 import {
-  WidgetPresentersList
+  WidgetPresentersTable
 } from 'eventjuicer-admin-site-components'
 
 
@@ -18,7 +18,7 @@ const settings = require('../settings').default;
 
 
 
-const PageMap = () => (<Wrapper first><WidgetPresentersList /></Wrapper>)
+const PageMap = () => (<Wrapper first><WidgetPresentersTable /></Wrapper>)
 
 
 
