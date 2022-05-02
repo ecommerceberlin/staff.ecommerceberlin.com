@@ -1,5 +1,11 @@
 const settings = {
        
+    aggregates: {
+        show_vouchers: false, 
+        show_furniture: true 
+    },
+
+
     system : {
         use_old_ecommerce_module: 1,
         passwords : {
